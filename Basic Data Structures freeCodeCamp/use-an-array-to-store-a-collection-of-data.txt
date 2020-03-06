@@ -1,0 +1,2 @@
+let yourArray = ["one", 1, true, null, undefined]; // change this line
+console.log(yourArray.length)

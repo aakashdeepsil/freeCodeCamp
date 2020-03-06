@@ -1,0 +1,12 @@
+function rangeOfNumbers(startNum, endNum) {
+  if(endNum < startNum){
+    return [];
+  }
+  else{
+    const rangeNumber = rangeOfNumbers(startNum,endNum-1);
+    rangeNumber.push(endNum);
+    return rangeNumber;
+  }
+};
+
+console.log(rangeOfNumbers(1,5));
